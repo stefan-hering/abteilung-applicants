@@ -5,7 +5,7 @@ interface Product {
     title: string,
     brand: string,
     imageUrl: string,
-    attributes: {string: string[]}
+    attributes: {[key:string]: string[]}
 }
 
 export const search = (searchTerm: String, results: number = 5): Product[] => {
